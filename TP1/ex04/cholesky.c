@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #define N 4
+/*start with the algorithm*/
 
 float cholesky(float c[N][N], float a[N][N],int n){
 	for(int j=0;j<n;j++){
