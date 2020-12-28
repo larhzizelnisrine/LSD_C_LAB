@@ -14,10 +14,10 @@ int main()
   float   *x;
   int     n;
 
-  printf("Enter the size of the matrix: ");
+  printf("Entrer la dimension de la matrice: ");
   scanf("%d", &n);
 
-  printf("Filling the matrix A\n");
+  printf("donner les elements de A\n");
   for(int i = 0; i < n; i++)
   {
     for(int j = 0; j < n; j++)
@@ -27,7 +27,7 @@ int main()
     }
   }
 
-  printf("Filling the vector B\n");
+  printf("donner les elements de B\n");
   for (int i = 0; i < n; i++)
   {
     printf("B[%d] = ", i);
@@ -35,7 +35,7 @@ int main()
   }
 
   x = remontee(A, B, n)
-  printf("\nThe resulting vector: [");
+  printf("\nle resultat: [");
   for (int i = 0; i < n; i++)
     printf("%f%c", x[i], ",]"[i == n - 1]);
 }
