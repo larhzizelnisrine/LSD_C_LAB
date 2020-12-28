@@ -5,15 +5,6 @@
 float *remontee(float A[N][N], float B[N], int n)
 {
 
-  /* A hint: you cant return an array which is allocated in the stack memory. \
-  ** you may consider to create a dynamically allocated array and return a pointer to it. \
-  ** https://gribblelab.org/CBootCamp/7_Memory_Stack_vs_Heap.html
-  */
-
-  /******Implement the solution here******/
-  /***************************************/
-  
-  /***************************************/
   return x;
 }
 
@@ -26,7 +17,6 @@ int main()
   printf("Enter the size of the matrix: ");
   scanf("%d", &n);
 
-  /* Filling the matrix A */
   printf("Filling the matrix A\n");
   for(int i = 0; i < n; i++)
   {
@@ -37,7 +27,6 @@ int main()
     }
   }
 
-  /* Filling the vector B*/
   printf("Filling the vector B\n");
   for (int i = 0; i < n; i++)
   {
@@ -45,10 +34,7 @@ int main()
     scanf("%f", &B[i]);
   }
 
-  /* The calculation of the result */
-  x = remontee(A, B, n);
-
-  /* Printing the results */
+  x = remontee(A, B, n)
   printf("\nThe resulting vector: [");
   for (int i = 0; i < n; i++)
     printf("%f%c", x[i], ",]"[i == n - 1]);
