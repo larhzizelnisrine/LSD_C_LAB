@@ -34,7 +34,7 @@ int main()
   }
 
   x = lu(A, B, n)
-  printf("\nThe resulting vector: [");
+  printf("\n The resulting vector: [");
   for (int i = 0; i < n; i++)
     printf("%f%c", x[i], ",]"[i == n - 1]);
 }
