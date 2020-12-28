@@ -21,7 +21,7 @@ int main()
   float   *x;
   int     n;
 
-  printf("Enter the size of the matrix: ");
+  printf("donner la dimension de la matrice: ");
   scanf("%d", &n);
 
   printf("Filling the matrix A\n");
