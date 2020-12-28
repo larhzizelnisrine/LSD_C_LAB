@@ -3,7 +3,7 @@
 #define N 10
 
 
-float *descente(float A[N][N], float B[N], int n)
+float (float A[N][N], float B[N], int n)
 {
   float   *x;
 
@@ -19,9 +19,9 @@ int main()
   float   *x;
   int     n;
 
-  printf("Enter the size of the matrix: ");
+  printf("Entrer la dim de la matrice: ");
   scanf("%d", &n);
-  printf("Filling the matrix A\n");
+  printf("entrer les elements de la matrice A\n");
   for(int i = 0; i < n; i++)
   {
     for(int j = 0; j < n; j++)
@@ -30,7 +30,7 @@ int main()
       scanf("%f", &A[i][j]);
     }
   }
-  printf("Filling the matrix B\n");
+  printf("Entrer les elements de la matrice B\n");
   for (int i = 0; i < n; i++)
   {
     printf("B[%d] = ", i);
@@ -38,7 +38,7 @@ int main()
   }
   x = descente(A, B, n);
   
-  printf("\nThe resulting vector: [");
+  printf("\n le resultat: [");
   for (int i = 0; i < n; i++)
     printf("%f%c", x[i], ",]"[i == n - 1]);
 }
