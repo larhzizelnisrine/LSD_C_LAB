@@ -8,6 +8,17 @@ float (float A[N][N], float B[N], int n)
   float   *x;
 
   x = malloc(sizeof(float) * n);
+   x[0] = B[0] / A[0][0];
+
+  for (i= 1; i < n; i++)
+  {
+	  s = 0;
+          for (j = 0; j <= i-1; j++)
+	  {
+		  s += A[i][j] * x[j];
+          }
+	  x[i] = (B[i] - s) / A[i][i];
+  }
 
   return (x);
 }
